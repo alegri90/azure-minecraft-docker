@@ -29,30 +29,6 @@
 #     stop_time                  = "00:01"
 #     vanity_hostname_prefix     = "minecraft116"
 #   }
-#   experimental                 = {
-#     allow_ops_only             = "true"
-#     container_image_tag        = "multiarch-latest"
-#     environment_variables      = {
-#       ALLOW_NETHER             = true
-#       ANNOUNCE_PLAYER_ACHIEVEMENTS = "true"
-#       DIFFICULTY               = "easy"
-#       ENABLE_COMMAND_BLOCK     = true
-#       EULA                     = true
-#       ICON                     = null
-#       MAX_PLAYERS              = 10
-#       MODS                     = null
-#       MODE                     = "creative"
-#       MOTD                     = "Experimental server, data will be lost!!!"
-#       OVERRIDE_SERVER_PROPERTIES = true
-#       SNOOPER_ENABLED          = "false"
-#       TYPE                     = "PAPER"
-#       VERSION                  = "LATEST"
-#     }
-#     minecraft_server_port      = 25565
-#     start_time                 = ""
-#     stop_time                  = "00:01"
-#     vanity_hostname_prefix     = "minecraft117"
-#   }
 # }
 # provisoner_email_address       = "nobody@no.no"
 

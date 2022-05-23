@@ -43,17 +43,10 @@ output minecraft {
   value       = merge(
     {
       for key in keys(var.minecraft_config) : key => merge(var.minecraft_config[key],module.functions[key],module.minecraft[key])
-    },
-    {
-      for key in keys(var.minecraft_bedrock_config) : key => var.minecraft_bedrock_config[key]
     }
   )
 }
 
-output minecraft_bedrock {
-  sensitive   = true
-  value       = {for key in keys(var.minecraft_bedrock_config) : key => merge(var.minecraft_bedrock_config[key],module.minecraft_bedrock[key])}
-}
 output minecraft_java {
   sensitive   = true
   value       = {for key in keys(var.minecraft_config) : key => merge(var.minecraft_config[key],module.functions[key],module.minecraft[key])}
